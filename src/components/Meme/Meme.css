@@ -1,0 +1,68 @@
+.form {
+    display: grid;
+    grid-template: 40px 40px / 1fr 1fr;
+    gap: 5px;
+}
+
+.button {
+    width: 200px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+main {
+    padding: 36px;
+    width: 80%;
+    margin-left: 10%;
+    border: grey 1px solid;
+}
+
+.input {
+    border-radius: 5px;
+    border: 1px solid purple;
+    text-indent: 5px;
+}
+
+.img {
+    width: 100%;
+    position: relative;
+}
+
+.text-top {
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    word-wrap: break-word;
+}
+
+.text-bottom {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+}
+
+.meme {
+    margin-top: 3%;
+    margin-left: 10%;
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 80%;
+    font-size: 60px;
+    font-weight: 900;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+}
+
+.file-upload {
+    display: inline-block;
+    padding: 5px;
+}

@@ -1,0 +1,31 @@
+
+.logo {
+    width: 70px;
+    margin-right: 10px;
+}
+
+.header-title {
+    font-size: 25px;
+    margin-right: auto;
+}
+
+.header-desc {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+}
+
+.header {
+    margin-left: 10%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    color: white;
+    padding: 20px;
+}
