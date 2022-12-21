@@ -12,6 +12,7 @@ export default function Meme() {
     //default image, replace image
     const [newImg, setNewImg] = React.useState("https://images7.alphacoders.com/121/1210460.jpg");
 
+    //top and bottom text update from inputs
     function handleChange(event) {
         const {name, value} = event.target
         setMeme(prevMeme => ({
@@ -20,6 +21,7 @@ export default function Meme() {
         }))
     }
 
+    //new image file upload
     function handleImageChange(event) {
         setNewImg(URL.createObjectURL(event.target.files[0]))
     }

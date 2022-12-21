@@ -1,8 +1,9 @@
 import React from "react";
-import Header from "./components/Header/Header";
-import Meme from "./components/Meme/Meme";
+import Header from "../../components/Header/Header";
+import Meme from "../../components/Meme/Meme";
 import "./App.css";
 
+// Home page
 export default function App() {
     return (
       <div>
