@@ -30,6 +30,9 @@ main {
 .img {
     width: 100%;
     position: relative;
+    max-height: 600px;
+    min-height: 500px;
+    min-width: 80%;
 }
 
 .text-top {
@@ -47,6 +50,7 @@ main {
     left: 50%;
     transform: translate(-50%);
     width: 90%;
+    word-wrap: break-word;
 }
 
 .meme {

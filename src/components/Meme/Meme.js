@@ -31,14 +31,14 @@ export default function Meme() {
             <div className="form">
                 <h5>Enter top text:</h5>
                 <h5>Enter bottom text:</h5>
-                <input className="input" placeholder="Top text" type="text" 
+                <input className="input" maxLength={50} placeholder="Top text" type="text" 
                 value={meme.topText} name="topText" onChange={handleChange} />
 
-                <input className="input" placeholder="Bottom Fail" type="text" 
+                <input className="input" maxLength={50} placeholder="Bottom Fail" type="text" 
                 value={meme.bottomText} name="bottomText" onChange={handleChange} />
                 <div>
                     <h6 className="file-upload">Upload new picture:</h6>
-                   <input type="file" onChange={handleImageChange} className="file-upload" />
+                   <input type="file" accept="image/*" onChange={handleImageChange} className="file-upload" />
                 </div>
                 
             </div> 
