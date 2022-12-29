@@ -70,3 +70,9 @@ main {
     display: inline-block;
     padding: 5px;
 }
+
+.colour-choice {
+    display: inline-block;
+    width: 150px;
+    margin-left: 10px;
+}

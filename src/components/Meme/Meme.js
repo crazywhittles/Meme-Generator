@@ -26,6 +26,13 @@ export default function Meme() {
         setNewImg(URL.createObjectURL(event.target.files[0]))
     }
 
+    //font colour select
+    const [color, setColor] = React.useState("white");
+
+    function handleColorChange(event) {
+        setColor(event.target.value)
+    }
+
     return (
         <main>
             <div className="form">
@@ -40,12 +47,26 @@ export default function Meme() {
                     <h6 className="file-upload">Upload new picture:</h6>
                    <input type="file" accept="image/*" onChange={handleImageChange} className="file-upload" />
                 </div>
-                
+                <div>
+                    <h6 className="file-upload">Font Colour:</h6>
+                    <div className="colour-choice">
+                    <select className="form-select" aria-label="Default select example" value={color} 
+                    onChange={handleColorChange}>
+                    <option value="white">White</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                    <option value="blue">Blue</option>
+                    </select>
+                    </div>
+                </div>
             </div> 
             <div className="meme">
                 <img className="img" src={newImg} alt="default" />
-                <div className="text-top">{meme.topText}</div>
-                <div className="text-bottom">{meme.bottomText}</div>
+                <div className="text-top" style={{color}}>{meme.topText}</div>
+                <div className="text-bottom" style={{color}}>{meme.bottomText}</div>
             </div>
         </main>
     );
